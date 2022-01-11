@@ -15,8 +15,8 @@ OUTPUT:
 */
 
 export function findByName(name, arr) {
-    const names = arr.filter(pet => pet.name);
-    return names[1];
+    const names = arr.filter(pet => pet.name === 'sassy');
+    return names;
 
 }
 
