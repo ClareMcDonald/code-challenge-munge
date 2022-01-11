@@ -15,7 +15,9 @@ OUTPUT:
 */
 
 export function findByName(name, arr) {
-    return {};
+    const names = arr.filter(pet => pet.name);
+    return names[1];
+
 }
 
 /*
