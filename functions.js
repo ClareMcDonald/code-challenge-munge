@@ -100,9 +100,7 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-    const hungryArr = arr.map(pet => {
-        pet.push(isHungry: true);
-    });
+    const hungryArr = arr.map(pet => ({ ...pet, isHungry: true }));
     return hungryArr;
 }
 
