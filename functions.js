@@ -80,7 +80,13 @@ Output:
 */
 
 export function makeSpanishLanguageArray(arr) {
-    return [];
+    const spanishArray = arr.map(pet => {
+        return {
+            nombre: pet.name,
+            tipo: pet.type
+        };
+    });
+    return spanishArray;
 }
 
 /*
