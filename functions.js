@@ -52,7 +52,8 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
-    return [];
+    const names = arr.map(pet => pet.name);
+    return names;
 }
 
 /*
@@ -62,7 +63,9 @@ Output:
 */
 
 export function makeReversedArrayOfTypes(arr) {
-    return [];
+    const reversedTypes = arr.map(pet => pet.type)
+        .reverse(pet => pet.type);
+    return reversedTypes;
 }
 
 /*
